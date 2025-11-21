@@ -83,7 +83,7 @@ python src/merge.py --input_dir ../papers --output_file ../papers/merge/merged_p
 | 参数名         | 类型    | 默认值                  | 可选值                     | 说明                                                                 |
 |----------------|---------|-------------------------|----------------------------|----------------------------------------------------------------------|
 | `--input_files` | list    | 无（必填）              | 多个 CSV 文件路径（空格分隔） | 需要合并的论文 CSV 文件，支持任意数量（需保证字段结构一致）           |
-| `--input_dir`  | string  | 无                      | 合法目录路径               | 批量合并指定目录下的所有 CSV 文件（与 `--input_files` 二选一）        |
+| `--input_dir`  | string  | `../papers`       | 合法目录路径               | 批量合并指定目录下的所有 CSV 文件（与 `--input_files` 二选一）        |
 | `--output_file`| string  | `../papers/merge/merged.csv` | 任意合法文件路径（后缀为 .csv） | 合并后的 CSV 保存路径（需确保目录存在且有写入权限）                   |
 | `--drop_duplicates` | bool | `True`                 | True / False               | 是否自动去除重复论文（基于标题和作者字段判断重复）                   |
 
